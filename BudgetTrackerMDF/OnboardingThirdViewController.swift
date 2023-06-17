@@ -12,18 +12,27 @@ class OnboardingThirdViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var bottomView: UIView!
-    
+
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        addShadowView()
 
-        // Do any additional setup after loading the view.
     }
 
     // MARK: - Setup
 
 
     // MARK: - Actions
+
+    private func addShadowView() {
+        bottomView.layer.shadowColor = UIColor.black.cgColor
+        bottomView.layer.shadowOpacity = 0.3
+        bottomView.layer.shadowOffset = .zero
+        bottomView.layer.shadowRadius = 10
+        bottomView.layer.shouldRasterize = true
+        bottomView.layer.rasterizationScale = UIScreen.main.scale
+    }
 
 }
