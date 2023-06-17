@@ -1,14 +1,13 @@
 //
-//  SecondScreen.swift
+//  OnboardingSecondViewController.swift
 //  BudgetTrackerMDF
 //
 //  Created by Admin on 17.06.23.
 //
 
-import Foundation
 import UIKit
 
-class applicationStsrtPage: UIViewController {
+class OnboardingSecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
