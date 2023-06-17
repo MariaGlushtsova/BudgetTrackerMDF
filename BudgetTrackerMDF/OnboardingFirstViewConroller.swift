@@ -10,15 +10,17 @@ import UIKit
 class OnboardingFirstViewConroller: UIViewController {
     
    
-    @IBOutlet weak var ImageView: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var label: UILabel!
     
-    @IBOutlet weak var SecondImageView: UIImageView!
+    @IBOutlet weak var secondImageView: UIImageView!
     
-    @IBOutlet weak var SecondLabel: UILabel!
+    @IBOutlet weak var secondLabel: UILabel!
     
-    @IBOutlet weak var Button: UIButton!
+    @IBOutlet weak var button: UIButton!
+    
+    @IBOutlet weak var thirdLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
