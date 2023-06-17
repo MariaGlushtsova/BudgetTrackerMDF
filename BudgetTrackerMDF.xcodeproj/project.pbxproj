@@ -17,6 +17,7 @@
 		D17C8F182A3DCC2400A11528 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17C8F172A3DCC2400A11528 /* Colors.swift */; };
 		D17C8F1A2A3DD4AF00A11528 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17C8F192A3DD4AF00A11528 /* Images.swift */; };
 		D17C8F1C2A3DDA4000A11528 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17C8F1B2A3DDA4000A11528 /* Fonts.swift */; };
+		FAD7478E2A3DBD3300EDE392 /* OnboardingThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7478D2A3DBD3300EDE392 /* OnboardingThreeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		D17C8F172A3DCC2400A11528 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D17C8F192A3DD4AF00A11528 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		D17C8F1B2A3DDA4000A11528 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		FAD7478D2A3DBD3300EDE392 /* OnboardingThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingThreeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				D17C8F0E2A3DC6AC00A11528 /* App */,
 				D17C8F0F2A3DC6BB00A11528 /* Sources */,
 				D17C8F102A3DC6E700A11528 /* Resources */,
+				FAD7478D2A3DBD3300EDE392 /* OnboardingThreeViewController.swift */,
 			);
 			path = BudgetTrackerMDF;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD7478E2A3DBD3300EDE392 /* OnboardingThreeViewController.swift in Sources */,
 				84EF515B2A3B554500579639 /* ViewController.swift in Sources */,
 				D17C8F182A3DCC2400A11528 /* Colors.swift in Sources */,
 				D17C8F1A2A3DD4AF00A11528 /* Images.swift in Sources */,
