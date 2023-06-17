@@ -14,6 +14,7 @@ class OnboardingFirstViewConroller: UIViewController {
     
     @IBOutlet weak var label: UILabel!
     
+    @IBOutlet weak var SecondImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
