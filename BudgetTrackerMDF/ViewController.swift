@@ -9,9 +9,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var labek: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+//        labek.font = UIFont(name: "GTWalsheimPro-Regular", size: 16)
     }
 
 
