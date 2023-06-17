@@ -14,10 +14,6 @@
 		84EF51602A3B554600579639 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EF515F2A3B554600579639 /* Assets.xcassets */; };
 		84EF51632A3B554600579639 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EF51612A3B554600579639 /* LaunchScreen.storyboard */; };
 		D17C8EFD2A3DBCA600A11528 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D17C8EFC2A3DBCA600A11528 /* SnapKit */; };
-		D17C8F0A2A3DC17A00A11528 /* GTWalsheimPro-LightOblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D17C8F062A3DC17900A11528 /* GTWalsheimPro-LightOblique.ttf */; };
-		D17C8F0B2A3DC17A00A11528 /* GTWalsheimPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D17C8F072A3DC17900A11528 /* GTWalsheimPro-Regular.ttf */; };
-		D17C8F0C2A3DC17A00A11528 /* GTWalsheimPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D17C8F082A3DC17A00A11528 /* GTWalsheimPro-Medium.ttf */; };
-		D17C8F0D2A3DC17A00A11528 /* GTWalsheimPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D17C8F092A3DC17A00A11528 /* GTWalsheimPro-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,10 +25,10 @@
 		84EF515F2A3B554600579639 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84EF51622A3B554600579639 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84EF51642A3B554600579639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D17C8F062A3DC17900A11528 /* GTWalsheimPro-LightOblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GTWalsheimPro-LightOblique.ttf"; path = "../../GTWalsheimPro-LightOblique.ttf"; sourceTree = "<group>"; };
-		D17C8F072A3DC17900A11528 /* GTWalsheimPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GTWalsheimPro-Regular.ttf"; path = "../../GTWalsheimPro-Regular.ttf"; sourceTree = "<group>"; };
-		D17C8F082A3DC17A00A11528 /* GTWalsheimPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GTWalsheimPro-Medium.ttf"; path = "../../GTWalsheimPro-Medium.ttf"; sourceTree = "<group>"; };
-		D17C8F092A3DC17A00A11528 /* GTWalsheimPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GTWalsheimPro-Bold.ttf"; path = "../../GTWalsheimPro-Bold.ttf"; sourceTree = "<group>"; };
+		D17C8F112A3DC6E800A11528 /* GTWalsheimPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GTWalsheimPro-Bold.ttf"; sourceTree = "<group>"; };
+		D17C8F122A3DC6E800A11528 /* GTWalsheimPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GTWalsheimPro-Medium.ttf"; sourceTree = "<group>"; };
+		D17C8F132A3DC6E800A11528 /* GTWalsheimPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GTWalsheimPro-Regular.ttf"; sourceTree = "<group>"; };
+		D17C8F142A3DC6E800A11528 /* GTWalsheimPro-LightOblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GTWalsheimPro-LightOblique.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,19 +62,51 @@
 		84EF51552A3B554500579639 /* BudgetTrackerMDF */ = {
 			isa = PBXGroup;
 			children = (
-				84EF51562A3B554500579639 /* AppDelegate.swift */,
-				84EF51582A3B554500579639 /* SceneDelegate.swift */,
-				84EF515A2A3B554500579639 /* ViewController.swift */,
-				84EF515C2A3B554500579639 /* Main.storyboard */,
-				84EF515F2A3B554600579639 /* Assets.xcassets */,
-				84EF51612A3B554600579639 /* LaunchScreen.storyboard */,
-				84EF51642A3B554600579639 /* Info.plist */,
-				D17C8F092A3DC17A00A11528 /* GTWalsheimPro-Bold.ttf */,
-				D17C8F062A3DC17900A11528 /* GTWalsheimPro-LightOblique.ttf */,
-				D17C8F082A3DC17A00A11528 /* GTWalsheimPro-Medium.ttf */,
-				D17C8F072A3DC17900A11528 /* GTWalsheimPro-Regular.ttf */,
+				D17C8F0F2A3DC6BB00A11528 /* Sources */,
+				D17C8F102A3DC6E700A11528 /* Resources */,
 			);
 			path = BudgetTrackerMDF;
+			sourceTree = "<group>";
+		};
+		D17C8F0E2A3DC6AC00A11528 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				84EF51562A3B554500579639 /* AppDelegate.swift */,
+				84EF51582A3B554500579639 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D17C8F0F2A3DC6BB00A11528 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				84EF515A2A3B554500579639 /* ViewController.swift */,
+				84EF515C2A3B554500579639 /* Main.storyboard */,
+				84EF51612A3B554600579639 /* LaunchScreen.storyboard */,
+				D17C8F0E2A3DC6AC00A11528 /* App */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D17C8F102A3DC6E700A11528 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84EF515F2A3B554600579639 /* Assets.xcassets */,
+				84EF51642A3B554600579639 /* Info.plist */,
+				D17C8F152A3DC7C100A11528 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D17C8F152A3DC7C100A11528 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D17C8F112A3DC6E800A11528 /* GTWalsheimPro-Bold.ttf */,
+				D17C8F142A3DC6E800A11528 /* GTWalsheimPro-LightOblique.ttf */,
+				D17C8F122A3DC6E800A11528 /* GTWalsheimPro-Medium.ttf */,
+				D17C8F132A3DC6E800A11528 /* GTWalsheimPro-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,12 +174,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				84EF51632A3B554600579639 /* LaunchScreen.storyboard in Resources */,
-				D17C8F0D2A3DC17A00A11528 /* GTWalsheimPro-Bold.ttf in Resources */,
 				84EF51602A3B554600579639 /* Assets.xcassets in Resources */,
-				D17C8F0C2A3DC17A00A11528 /* GTWalsheimPro-Medium.ttf in Resources */,
-				D17C8F0A2A3DC17A00A11528 /* GTWalsheimPro-LightOblique.ttf in Resources */,
 				84EF515E2A3B554500579639 /* Main.storyboard in Resources */,
-				D17C8F0B2A3DC17A00A11528 /* GTWalsheimPro-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +336,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BudgetTrackerMDF/Info.plist;
+				INFOPLIST_FILE = BudgetTrackerMDF/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -339,7 +363,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BudgetTrackerMDF/Info.plist;
+				INFOPLIST_FILE = BudgetTrackerMDF/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
