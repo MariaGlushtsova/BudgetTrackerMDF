@@ -12,7 +12,10 @@ class OnboardingThirdViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var bottomView: UIView!
-
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var discriptionLabel: UILabel!
+    @IBOutlet weak var interestedButton: UIButton!
+    
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
