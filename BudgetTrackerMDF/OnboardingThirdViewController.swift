@@ -11,6 +11,7 @@ class OnboardingThirdViewController: UIViewController {
 
     // MARK: - Outlets
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var bottomView: UIView!
     
     // MARK: - Lifecycle
 
