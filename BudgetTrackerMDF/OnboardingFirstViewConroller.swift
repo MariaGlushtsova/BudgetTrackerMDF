@@ -18,6 +18,8 @@ class OnboardingFirstViewConroller: UIViewController {
     
     @IBOutlet weak var SecondLabel: UILabel!
     
+    @IBOutlet weak var Button: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
