@@ -15,6 +15,7 @@
 		84EF51632A3B554600579639 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EF51612A3B554600579639 /* LaunchScreen.storyboard */; };
 		D17C8EFD2A3DBCA600A11528 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D17C8EFC2A3DBCA600A11528 /* SnapKit */; };
 		D17C8F182A3DCC2400A11528 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17C8F172A3DCC2400A11528 /* Colors.swift */; };
+		D17C8F1A2A3DD4AF00A11528 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17C8F192A3DD4AF00A11528 /* Images.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		D17C8F132A3DC6E800A11528 /* GTWalsheimPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GTWalsheimPro-Regular.ttf"; sourceTree = "<group>"; };
 		D17C8F142A3DC6E800A11528 /* GTWalsheimPro-LightOblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GTWalsheimPro-LightOblique.ttf"; sourceTree = "<group>"; };
 		D17C8F172A3DCC2400A11528 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D17C8F192A3DD4AF00A11528 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				D17C8F172A3DCC2400A11528 /* Colors.swift */,
+				D17C8F192A3DD4AF00A11528 /* Images.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			files = (
 				84EF515B2A3B554500579639 /* ViewController.swift in Sources */,
 				D17C8F182A3DCC2400A11528 /* Colors.swift in Sources */,
+				D17C8F1A2A3DD4AF00A11528 /* Images.swift in Sources */,
 				84EF51572A3B554500579639 /* AppDelegate.swift in Sources */,
 				84EF51592A3B554500579639 /* SceneDelegate.swift in Sources */,
 			);
