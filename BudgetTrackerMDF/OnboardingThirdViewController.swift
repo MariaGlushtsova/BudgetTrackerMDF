@@ -11,7 +11,7 @@ class OnboardingThirdViewController: UIViewController {
 
     // MARK: - Outlets
     @IBOutlet weak private var imageView: UIImageView!
-    @IBOutlet weak private var bottomView: UIView!
+    @IBOutlet weak private var childView: UIView!
     @IBOutlet weak private var titleLabel: UILabel!
     @IBOutlet weak private var discriptionLabel: UILabel!
     @IBOutlet weak private var interestedButton: UIButton!
@@ -28,12 +28,12 @@ class OnboardingThirdViewController: UIViewController {
     // MARK: - Setup
 
     private func addShadowView() {
-        bottomView.layer.shadowColor = UIColor.black.cgColor
-        bottomView.layer.shadowOpacity = 0.07
-        bottomView.layer.shadowOffset = CGSize(width: 0, height: 12)
-        bottomView.layer.shadowRadius = 36
-        bottomView.layer.shouldRasterize = true
-        bottomView.layer.rasterizationScale = UIScreen.main.scale
+        childView.layer.shadowColor = UIColor.black.cgColor
+        childView.layer.shadowOpacity = 0.07
+        childView.layer.shadowOffset = CGSize(width: 0, height: 12)
+        childView.layer.shadowRadius = 36
+        childView.layer.shouldRasterize = true
+        childView.layer.rasterizationScale = UIScreen.main.scale
     }
 
     // MARK: - Actions

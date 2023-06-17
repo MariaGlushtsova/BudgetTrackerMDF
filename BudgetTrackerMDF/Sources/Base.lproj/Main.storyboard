@@ -11,15 +11,16 @@
         <!--Onboarding Third View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="OnboardingThirdViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="OnboardingThirdViewController" customModule="BudgetTrackerMDF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RZ9-BK-EdM">
-                                <rect key="frame" x="72" y="207" width="250" height="212"/>
+                                <rect key="frame" x="80.666666666666686" y="207" width="232" height="212"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="212" id="FQb-TJ-LAV"/>
+                                    <constraint firstAttribute="width" constant="232" id="WhD-Eq-Sed"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nO7-Tp-IGC">
@@ -50,6 +51,11 @@
                                         <buttonConfiguration key="configuration" style="plain" title="I'm interested">
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -59,11 +65,11 @@
                                     <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="BPu-Ad-kJT" secondAttribute="trailing" constant="29" id="IbZ-VM-x7L"/>
                                     <constraint firstItem="BeI-Bp-pag" firstAttribute="leading" secondItem="nO7-Tp-IGC" secondAttribute="leading" constant="45" id="KVG-XZ-1va"/>
                                     <constraint firstItem="BPu-Ad-kJT" firstAttribute="centerX" secondItem="nO7-Tp-IGC" secondAttribute="centerX" id="M5l-8g-mvt"/>
+                                    <constraint firstAttribute="height" constant="270" id="ZaO-mq-y4U"/>
                                     <constraint firstItem="BeI-Bp-pag" firstAttribute="centerX" secondItem="nO7-Tp-IGC" secondAttribute="centerX" id="eKq-5K-cLj"/>
                                     <constraint firstItem="BPu-Ad-kJT" firstAttribute="leading" secondItem="nO7-Tp-IGC" secondAttribute="leading" constant="29" id="ftg-0V-33o"/>
                                     <constraint firstAttribute="width" constant="345" id="iBT-g5-YRu"/>
                                     <constraint firstItem="jh2-fd-aWZ" firstAttribute="top" secondItem="nO7-Tp-IGC" secondAttribute="top" constant="34.5" id="jda-Hr-hvx"/>
-                                    <constraint firstAttribute="height" constant="270" id="r36-CP-bg2"/>
                                     <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="BeI-Bp-pag" secondAttribute="trailing" constant="45" id="vGK-eQ-J3m"/>
                                 </constraints>
                             </view>
@@ -78,17 +84,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="nO7-Tp-IGC" secondAttribute="bottom" constant="12" id="44n-bB-ZES"/>
                             <constraint firstItem="ofE-rg-ngd" firstAttribute="top" secondItem="RZ9-BK-EdM" secondAttribute="bottom" constant="112" id="4FH-nv-6nC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RZ9-BK-EdM" secondAttribute="trailing" constant="71" id="EUc-te-5uO"/>
+                            <constraint firstItem="RZ9-BK-EdM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HTS-jL-WZo"/>
                             <constraint firstItem="nO7-Tp-IGC" firstAttribute="top" secondItem="ofE-rg-ngd" secondAttribute="bottom" constant="35" id="RpR-OS-BAG"/>
                             <constraint firstItem="nO7-Tp-IGC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WKU-1x-aF0"/>
-                            <constraint firstItem="RZ9-BK-EdM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="hR8-XO-QEB"/>
                             <constraint firstItem="ofE-rg-ngd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jgI-9A-Mw6"/>
                             <constraint firstItem="RZ9-BK-EdM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="148" id="lCc-61-GKu"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bottomView" destination="nO7-Tp-IGC" id="Gab-U4-zMk"/>
+                        <outlet property="childView" destination="nO7-Tp-IGC" id="9dT-10-MHs"/>
                         <outlet property="discriptionLabel" destination="BPu-Ad-kJT" id="qzq-vX-9oK"/>
                         <outlet property="imageView" destination="RZ9-BK-EdM" id="zwf-GO-qkY"/>
                         <outlet property="interestedButton" destination="BeI-Bp-pag" id="1aX-wJ-p5h"/>
