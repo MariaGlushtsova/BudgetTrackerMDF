@@ -1,14 +1,17 @@
 //
-//  firstPage.swift
+//  OnboardingFirstViewConroller.swift
 //  BudgetTrackerMDF
 //
 //  Created by Amahastla on 17.06.2023.
 //
 
-import Foundation
 import UIKit
-class applicationStartPage: UIViewController {
 
+class OnboardingFirstViewConroller: UIViewController {
+    
+   
+    @IBOutlet weak var ImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
