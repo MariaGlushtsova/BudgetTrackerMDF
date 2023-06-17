@@ -15,6 +15,7 @@ class OnboardingThirdViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var discriptionLabel: UILabel!
     @IBOutlet weak var interestedButton: UIButton!
+    @IBOutlet weak var pageImageView: UIImageView!
     
     // MARK: - Lifecycle
 
