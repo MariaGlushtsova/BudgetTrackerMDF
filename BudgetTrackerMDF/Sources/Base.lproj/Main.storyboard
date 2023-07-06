@@ -72,13 +72,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="Title" destination="s7M-Z2-xUX" id="Otk-LQ-7o5"/>
                         <outlet property="bottomView" destination="ZT1-WN-U5n" id="l24-LD-M7z"/>
-                        <outlet property="button" destination="uDR-xa-9rl" id="qP9-rG-icR"/>
                         <outlet property="imageView" destination="Vr8-AJ-sgG" id="Ifj-Tg-Jhj"/>
                         <outlet property="scrollImageView" destination="u0W-qr-u8d" id="IdF-w7-no5"/>
-                        <outlet property="text" destination="Vxn-4h-4UL" id="Ubp-DK-fEu"/>
-                        <outlet property="title" destination="s7M-Z2-xUX" id="JNq-pZ-3mm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7jS-xM-R0N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -17,7 +17,7 @@ class OnboardingSecondViewController: UIViewController {
     @IBOutlet weak private var titleLabel: UILabel!
     @IBOutlet weak private var textLabel: UILabel!
     @IBOutlet weak private var nextButton: UIButton!
-    @IBOutlet weak var UIButton: UIButton!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
