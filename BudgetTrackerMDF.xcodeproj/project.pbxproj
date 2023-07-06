@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84E837232A3DC188005A1015 /* OnboardingSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E837222A3DC188005A1015 /* OnboardingSecondViewController.swift */; };
 		84EF51572A3B554500579639 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF51562A3B554500579639 /* AppDelegate.swift */; };
 		84EF51592A3B554500579639 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF51582A3B554500579639 /* SceneDelegate.swift */; };
 		84EF515E2A3B554500579639 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EF515C2A3B554500579639 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84E837222A3DC188005A1015 /* OnboardingSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSecondViewController.swift; sourceTree = "<group>"; };
 		84EF51532A3B554500579639 /* BudgetTrackerMDF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgetTrackerMDF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EF51562A3B554500579639 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84EF51582A3B554500579639 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
