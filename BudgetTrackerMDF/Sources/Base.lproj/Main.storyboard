@@ -3,10 +3,19 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="GTWalsheimPro-Bold.ttf">
+            <string>GTWalsheimPro-Bold</string>
+        </array>
+        <array key="GTWalsheimPro-Regular.ttf">
+            <string>GTWalsheimPro-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Onboarding Second View Controller-->
         <scene sceneID="7Or-lc-prE">
@@ -16,59 +25,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vr8-AJ-sgG">
-                                <rect key="frame" x="97" y="117" width="199" height="251"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u0W-qr-u8d">
-                                <rect key="frame" x="181" y="470" width="30" height="4"/>
+                                <rect key="frame" x="173" y="470" width="48" height="4"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZT1-WN-U5n">
-                                <rect key="frame" x="16" y="560" width="361" height="246"/>
+                                <rect key="frame" x="15" y="560" width="363" height="246"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7M-Z2-xUX">
-                                        <rect key="frame" x="88" y="34" width="185" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Synth polaroid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7M-Z2-xUX">
+                                        <rect key="frame" x="88" y="34" width="188" height="28"/>
+                                        <fontDescription key="fontDescription" name="GTWalsheimPro-Bold" family="GT Walsheim Pro" pointSize="24"/>
+                                        <color key="textColor" name="mainDark"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vxn-4h-4UL">
-                                        <rect key="frame" x="29" y="80" width="303" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In the tumultuous business of cutting-in and attending to a whale, there." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vxn-4h-4UL">
+                                        <rect key="frame" x="29" y="80" width="305" height="32.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="GTWalsheimPro-Regular" family="GT Walsheim Pro" pointSize="14"/>
+                                        <color key="textColor" red="0.10980392156862745" green="0.12549019607843137" blue="0.1803921568627451" alpha="0.59593918149834435" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDR-xa-9rl">
-                                        <rect key="frame" x="45" y="166.66666666666663" width="271" height="34.333333333333343"/>
+                                        <rect key="frame" x="45" y="166.66666666666663" width="273" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="I'm interested" cornerStyle="small">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" name="pink"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="s7M-Z2-xUX" firstAttribute="leading" secondItem="ZT1-WN-U5n" secondAttribute="leading" constant="88" id="Lvi-Uo-rcJ"/>
-                                    <constraint firstItem="Vxn-4h-4UL" firstAttribute="top" secondItem="ZT1-WN-U5n" secondAttribute="top" constant="80" id="O0X-iY-KGa"/>
-                                    <constraint firstItem="Vxn-4h-4UL" firstAttribute="leading" secondItem="ZT1-WN-U5n" secondAttribute="leading" constant="29" id="W4v-Su-tVO"/>
+                                    <constraint firstAttribute="trailing" secondItem="s7M-Z2-xUX" secondAttribute="trailing" constant="87" id="C9N-bK-qdJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vxn-4h-4UL" secondAttribute="trailing" constant="29" id="Eey-OR-hXB"/>
+                                    <constraint firstItem="s7M-Z2-xUX" firstAttribute="leading" secondItem="ZT1-WN-U5n" secondAttribute="leading" constant="88" id="HFe-6A-DqP"/>
+                                    <constraint firstItem="s7M-Z2-xUX" firstAttribute="top" secondItem="ZT1-WN-U5n" secondAttribute="top" constant="34" id="LTI-Tq-706"/>
+                                    <constraint firstItem="Vxn-4h-4UL" firstAttribute="leading" secondItem="ZT1-WN-U5n" secondAttribute="leading" constant="29" id="XxN-Hp-rbb"/>
                                     <constraint firstAttribute="bottom" secondItem="uDR-xa-9rl" secondAttribute="bottom" constant="45" id="aXd-Pi-B8l"/>
-                                    <constraint firstAttribute="trailing" secondItem="s7M-Z2-xUX" secondAttribute="trailing" constant="88" id="b08-Rh-cgl"/>
-                                    <constraint firstItem="s7M-Z2-xUX" firstAttribute="top" secondItem="ZT1-WN-U5n" secondAttribute="top" constant="34" id="cBQ-EJ-ab9"/>
                                     <constraint firstItem="uDR-xa-9rl" firstAttribute="leading" secondItem="ZT1-WN-U5n" secondAttribute="leading" constant="45" id="n7Y-J6-AI0"/>
-                                    <constraint firstAttribute="trailing" secondItem="Vxn-4h-4UL" secondAttribute="trailing" constant="29" id="plI-K2-Q9A"/>
                                     <constraint firstAttribute="height" constant="246" id="ruJ-am-1Kt"/>
+                                    <constraint firstItem="Vxn-4h-4UL" firstAttribute="top" secondItem="s7M-Z2-xUX" secondAttribute="bottom" constant="18" id="ugt-XE-hhI"/>
                                     <constraint firstAttribute="trailing" secondItem="uDR-xa-9rl" secondAttribute="trailing" constant="45" id="yYN-1W-GbD"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboardingSecond" translatesAutoresizingMaskIntoConstraints="NO" id="Vr8-AJ-sgG">
+                                <rect key="frame" x="97" y="187" width="199" height="251"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NeQ-pt-rC7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="u0W-qr-u8d" firstAttribute="centerX" secondItem="l0E-BV-6eb" secondAttribute="centerX" id="IQM-O4-bM2"/>
-                            <constraint firstItem="ZT1-WN-U5n" firstAttribute="leading" secondItem="NeQ-pt-rC7" secondAttribute="leading" constant="16" id="MZo-Jt-EeQ"/>
-                            <constraint firstItem="Vr8-AJ-sgG" firstAttribute="top" secondItem="NeQ-pt-rC7" secondAttribute="top" constant="128" id="UAB-YP-L2y"/>
-                            <constraint firstItem="NeQ-pt-rC7" firstAttribute="bottom" secondItem="ZT1-WN-U5n" secondAttribute="bottom" constant="12" id="YU5-VF-y9x"/>
-                            <constraint firstItem="u0W-qr-u8d" firstAttribute="top" secondItem="Vr8-AJ-sgG" secondAttribute="bottom" constant="93" id="fK6-hd-gDu"/>
-                            <constraint firstItem="Vr8-AJ-sgG" firstAttribute="leading" secondItem="NeQ-pt-rC7" secondAttribute="leading" constant="97" id="i2E-nb-oBj"/>
+                            <constraint firstItem="NeQ-pt-rC7" firstAttribute="bottom" secondItem="ZT1-WN-U5n" secondAttribute="bottom" constant="12" id="3Ge-yB-Oc2"/>
+                            <constraint firstItem="Vr8-AJ-sgG" firstAttribute="top" secondItem="NeQ-pt-rC7" secondAttribute="top" constant="128" id="5LG-ba-EtH"/>
+                            <constraint firstItem="u0W-qr-u8d" firstAttribute="leading" secondItem="NeQ-pt-rC7" secondAttribute="leading" constant="173" id="Aoe-Wu-lRM"/>
+                            <constraint firstItem="u0W-qr-u8d" firstAttribute="top" secondItem="Vr8-AJ-sgG" secondAttribute="bottom" constant="92" id="C2k-g8-Lvj"/>
+                            <constraint firstItem="ZT1-WN-U5n" firstAttribute="leading" secondItem="NeQ-pt-rC7" secondAttribute="leading" constant="15" id="IJr-Ry-XMa"/>
+                            <constraint firstItem="NeQ-pt-rC7" firstAttribute="trailing" secondItem="ZT1-WN-U5n" secondAttribute="trailing" constant="15" id="gy3-Bq-YJ1"/>
                             <constraint firstItem="NeQ-pt-rC7" firstAttribute="trailing" secondItem="Vr8-AJ-sgG" secondAttribute="trailing" constant="97" id="jwZ-1b-ucX"/>
-                            <constraint firstItem="NeQ-pt-rC7" firstAttribute="trailing" secondItem="ZT1-WN-U5n" secondAttribute="trailing" constant="16" id="w00-Db-NQX"/>
+                            <constraint firstItem="Vr8-AJ-sgG" firstAttribute="leading" secondItem="NeQ-pt-rC7" secondAttribute="leading" constant="97" id="siJ-lr-3ll"/>
+                            <constraint firstItem="NeQ-pt-rC7" firstAttribute="trailing" secondItem="u0W-qr-u8d" secondAttribute="trailing" constant="172" id="uTP-YE-BjY"/>
                         </constraints>
                     </view>
                     <connections>
@@ -79,7 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7jS-xM-R0N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-644" y="5"/>
+            <point key="canvasLocation" x="-645.03816793893122" y="4.9295774647887329"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -98,6 +113,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="onboardingSecond" width="181" height="251"/>
+        <namedColor name="mainDark">
+            <color red="0.10999999940395355" green="0.125" blue="0.18000000715255737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="pink">
+            <color red="1" green="0.20000000298023224" blue="0.47099998593330383" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
