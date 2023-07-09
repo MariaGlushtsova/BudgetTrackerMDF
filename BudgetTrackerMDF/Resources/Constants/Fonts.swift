@@ -8,10 +8,10 @@
 import UIKit
 
 enum Fonts: String {
-    case regular = "GTWalsheimPro-Regular.ttf"
-    case lightOblique = "GTWalsheimPro-LightOblique.ttf"
-    case medium = "GTWalsheimPro-Medium.ttf"
-    case bold = "GTWalsheimPro-Bold.ttf"
+    case regular = "GTWalsheimPro-Regular"
+    case lightOblique = "GTWalsheimPro-LightOblique"
+    case medium = "GTWalsheimPro-Medium"
+    case bold = "GTWalsheimPro-Bold"
 
     func addFont(_ size: CGFloat) -> UIFont {
         UIFont(name: rawValue, size: size) ?? UIFont()
