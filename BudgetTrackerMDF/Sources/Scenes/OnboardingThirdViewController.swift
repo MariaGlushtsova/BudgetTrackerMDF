@@ -13,7 +13,6 @@ class OnboardingThirdViewController: UIViewController {
 
     private lazy var onboardingView: OnboardingView = {
         let onboardingView = OnboardingView(model: OnboardingModel.modelsArray[0])
-        onboardingView.translatesAutoresizingMaskIntoConstraints = false
         return onboardingView
     }()
 
@@ -40,12 +39,11 @@ class OnboardingThirdViewController: UIViewController {
     }
     
     private func setupLayout() {
-        NSLayoutConstraint.activate([
-            onboardingView.topAnchor.constraint(equalTo: view.topAnchor),
-            onboardingView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            onboardingView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            onboardingView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        ])
+        onboardingView.addConstraints(top: view.topAnchor,
+                                      leading: view.leadingAnchor,
+                                      trailing: view.trailingAnchor,
+                                      bottom: view.bottomAnchor
+        )
     }
 
     // MARK: - Actions

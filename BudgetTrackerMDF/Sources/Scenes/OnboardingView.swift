@@ -16,14 +16,12 @@ final class OnboardingView: UIView {
     private lazy var mainImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
-        imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
 
     private lazy var pageImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
-        imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
 
@@ -38,7 +36,6 @@ final class OnboardingView: UIView {
         view.layer.masksToBounds = false
         view.layer.shouldRasterize = true
         view.layer.rasterizationScale = UIScreen.main.scale
-        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
 
@@ -48,7 +45,6 @@ final class OnboardingView: UIView {
         label.font = Fonts.bold.addFont(24)
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
 
@@ -58,7 +54,6 @@ final class OnboardingView: UIView {
         label.font = Fonts.regular.addFont(14)
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
 
@@ -69,7 +64,6 @@ final class OnboardingView: UIView {
         button.layer.cornerRadius = 10
         button.setTitle("I'm interested", for: .normal)
         button.setTitleColor(.white, for: .normal)
-        button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(listPageButtonPressed), for: .touchUpInside)
         return button
     }()
@@ -102,45 +96,50 @@ final class OnboardingView: UIView {
     }
 
     private func setupHierarchy() {
-        addSubview(mainImageView)
-        addSubview(pageImageView)
-        addSubview(childView)
-        childView.addSubview(titleLabel)
-        childView.addSubview(descriptionLabel)
-        childView.addSubview(listPageButton)
+        addSubviews([mainImageView, pageImageView, childView])
+        childView.addSubviews([titleLabel, descriptionLabel, listPageButton])
     }
 
     private func setupLayout() {
-        NSLayoutConstraint.activate([
-            mainImageView.bottomAnchor.constraint(equalTo: pageImageView.topAnchor, constant: -93),
-            mainImageView.centerXAnchor.constraint(equalTo: centerXAnchor),
-
-            mainImageView.heightAnchor.constraint(equalToConstant: 251),
-            mainImageView.widthAnchor.constraint(equalToConstant: 232),
-
-            pageImageView.bottomAnchor.constraint(equalTo: childView.topAnchor, constant: -35),
-            pageImageView.centerXAnchor.constraint(equalTo: centerXAnchor),
-
-            pageImageView.widthAnchor.constraint(equalToConstant: 30),
-            pageImageView.heightAnchor.constraint(equalToConstant: 4),
-
-            titleLabel.topAnchor.constraint(equalTo: childView.topAnchor, constant: 34),
-            titleLabel.centerXAnchor.constraint(equalTo: childView.centerXAnchor),
-
-            descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 18),
-            descriptionLabel.leadingAnchor.constraint(equalTo: childView.leadingAnchor, constant: 29),
-            descriptionLabel.trailingAnchor.constraint(equalTo: childView.trailingAnchor, constant: -29),
-
-            listPageButton.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 50),
-            listPageButton.leadingAnchor.constraint(equalTo: childView.leadingAnchor, constant: 45),
-            listPageButton.trailingAnchor.constraint(equalTo: childView.trailingAnchor, constant: -45),
-            listPageButton.heightAnchor.constraint(equalToConstant: 48),
-
-            childView.heightAnchor.constraint(equalToConstant: 270),
-            childView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
-            childView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15),
-            childView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -31)
-        ])
+        mainImageView.addConstraints(bottom: pageImageView.topAnchor,
+                                     paddingBottom: 93,
+                                     centerX: centerXAnchor,
+                                     width: 232,
+                                     height: 251
+        )
+        pageImageView.addConstraints(bottom: childView.topAnchor,
+                                     paddingBottom: 35,
+                                     centerX: centerXAnchor,
+                                     width: 30,
+                                     height: 4
+        )
+        titleLabel.addConstraints(top: childView.topAnchor,
+                                  paddingTop: 34,
+                                  centerX: centerXAnchor
+        )
+        descriptionLabel.addConstraints(top: titleLabel.bottomAnchor,
+                                        paddingTop: 18,
+                                        leading: childView.leadingAnchor,
+                                        paddingLeft: 29,
+                                        trailing: childView.trailingAnchor,
+                                        paddingRight: 29
+        )
+        listPageButton.addConstraints(top: descriptionLabel.bottomAnchor,
+                                      paddingTop: 50,
+                                      leading: childView.leadingAnchor,
+                                      paddingLeft: 45,
+                                      trailing: childView.trailingAnchor,
+                                      paddingRight: 45,
+                                      height: 48
+        )
+        childView.addConstraints(leading: leadingAnchor,
+                                 paddingLeft: 15,
+                                 trailing: trailingAnchor,
+                                 paddingRight: 15,
+                                 bottom: bottomAnchor,
+                                 paddingBottom: 31,
+                                 height: 270
+        )
     }
 
     // MARK: - Actions
