@@ -23,6 +23,7 @@
 		FA6CD1B02A5958F200B9E570 /* OnboardngModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CD1AF2A5958F200B9E570 /* OnboardngModel.swift */; };
 		FA6CD1B22A595B6700B9E570 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CD1B12A595B6700B9E570 /* OnboardingView.swift */; };
 		FAB2A3D92A850D3C001203B5 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2A3D82A850D3C001203B5 /* UIView+Extensions.swift */; };
+		FAB2A3DB2A8573E3001203B5 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2A3DA2A8573E3001203B5 /* Theme.swift */; };
 		FAD747922A3DE52A00EDE392 /* OnboardingThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD747912A3DE52A00EDE392 /* OnboardingThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		FA6CD1AF2A5958F200B9E570 /* OnboardngModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardngModel.swift; sourceTree = "<group>"; };
 		FA6CD1B12A595B6700B9E570 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		FAB2A3D82A850D3C001203B5 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		FAB2A3DA2A8573E3001203B5 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		FAD747912A3DE52A00EDE392 /* OnboardingThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +135,7 @@
 				D17C8F172A3DCC2400A11528 /* Colors.swift */,
 				D17C8F192A3DD4AF00A11528 /* Images.swift */,
 				D17C8F1B2A3DDA4000A11528 /* Fonts.swift */,
+				FAB2A3DA2A8573E3001203B5 /* Theme.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				FAD747922A3DE52A00EDE392 /* OnboardingThirdViewController.swift in Sources */,
 				FAB2A3D92A850D3C001203B5 /* UIView+Extensions.swift in Sources */,
 				FA6CD1B02A5958F200B9E570 /* OnboardngModel.swift in Sources */,
+				FAB2A3DB2A8573E3001203B5 /* Theme.swift in Sources */,
 				FA6CD1B22A595B6700B9E570 /* OnboardingView.swift in Sources */,
 				D17C8F182A3DCC2400A11528 /* Colors.swift in Sources */,
 				D17C8F1A2A3DD4AF00A11528 /* Images.swift in Sources */,

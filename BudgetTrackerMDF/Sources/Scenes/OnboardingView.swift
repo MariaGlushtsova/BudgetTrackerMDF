@@ -27,43 +27,26 @@ final class OnboardingView: UIView {
 
     private lazy var childView: UIView = {
         let view = UIView()
-        view.backgroundColor = .white
-        view.layer.cornerRadius = 20
-        view.layer.shadowColor = UIColor.black.cgColor
-        view.layer.shadowOpacity = 0.07
-        view.layer.shadowOffset = .zero
-        view.layer.shadowRadius = 36
-        view.layer.masksToBounds = false
-        view.layer.shouldRasterize = true
-        view.layer.rasterizationScale = UIScreen.main.scale
+        Theme.shadowViewStyle(view)
         return view
     }()
 
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.textColor = Colors.mainDark.color
-        label.font = Fonts.bold.addFont(24)
-        label.textAlignment = .center
-        label.numberOfLines = 0
+        Theme.labelStyle(label, font: .bold, size: 24)
         return label
     }()
 
     private lazy var descriptionLabel: UILabel = {
         let label = UILabel()
-        label.textColor = Colors.mainDark.color
-        label.font = Fonts.regular.addFont(14)
-        label.textAlignment = .center
-        label.numberOfLines = 0
+        Theme.labelStyle(label, font: .regular, size: 14)
         return label
     }()
 
     private lazy var listPageButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = Colors.pink.color
-        button.clipsToBounds = true
-        button.layer.cornerRadius = 10
+        Theme.pinkButtonStyle(button)
         button.setTitle("I'm interested", for: .normal)
-        button.setTitleColor(.white, for: .normal)
         button.addTarget(self, action: #selector(listPageButtonPressed), for: .touchUpInside)
         return button
     }()
