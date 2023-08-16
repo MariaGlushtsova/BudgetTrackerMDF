@@ -47,6 +47,18 @@ extension UIViewController {
         stack.transform = CGAffineTransform(translationX: 15, y: 10)
         stack.translatesAutoresizingMaskIntoConstraints = false
 
+        // Setup hierarchy
+        view.addSubview(customView)
+        customView.addSubview(stack)
+
+        // Layouts
+        NSLayoutConstraint.activate([
+            customView.topAnchor.constraint(equalTo: view.topAnchor),
+            customView.leftAnchor.constraint(equalTo: view.leftAnchor),
+            customView.rightAnchor.constraint(equalTo: view.rightAnchor),
+            customView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 25)
+        ])
+
         return customView
     }
 }
