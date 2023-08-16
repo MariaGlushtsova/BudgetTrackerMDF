@@ -30,13 +30,11 @@ extension UIViewController {
         backButton.setImage(arrow, for: .normal)
         backButton.setPreferredSymbolConfiguration(UIImage.SymbolConfiguration(pointSize: 20, weight: .regular), forImageIn: .normal)
         backButton.addTarget(self, action: Selector(action ?? ""), for: .touchUpInside)
-        backButton.translatesAutoresizingMaskIntoConstraints = false
 
         // Title
        let label = UILabel()
         label.text = title
-        label.font = .systemFont(ofSize: 20, weight: .heavy)
-        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = Fonts.bold.addFont(25)
 
         // Stack
         let stack = UIStackView()
@@ -58,6 +56,11 @@ extension UIViewController {
             customView.rightAnchor.constraint(equalTo: view.rightAnchor),
             customView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 25)
         ])
+
+        // bar button
+        let barButton = UIBarButtonItem(customView: stack )
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: stack)
+        navigationController?.navigationItem.setLeftBarButton(barButton, animated: true)
 
         return customView
     }
