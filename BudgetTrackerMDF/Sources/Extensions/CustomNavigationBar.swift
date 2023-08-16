@@ -8,9 +8,9 @@
 import UIKit
 
 extension UIViewController {
-    func createCustomNavigationBar() -> UIView {
+    func createCustomNavigationBar(title: String?, action: String?) -> UIView {
         let customView = UIView()
-        
+
         customView.backgroundColor = .white
         customView.layer.cornerRadius = 30
         customView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
@@ -22,6 +22,15 @@ extension UIViewController {
         customView.layer.shadowRadius = 5
         customView.layer.shouldRasterize = true
         customView.layer.rasterizationScale = UIScreen.main.scale
+
+        // Back button
+        let backButton = UIButton(type: .system)
+        let arrow = UIImage(systemName: "arrow.backward")
+        backButton.tintColor = .black
+        backButton.setImage(arrow, for: .normal)
+        backButton.setPreferredSymbolConfiguration(UIImage.SymbolConfiguration(pointSize: 20, weight: .regular), forImageIn: .normal)
+        backButton.addTarget(self, action: Selector(action ?? ""), for: .touchUpInside)
+        backButton.translatesAutoresizingMaskIntoConstraints = false
 
         return customView
     }
