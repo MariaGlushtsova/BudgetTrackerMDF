@@ -32,6 +32,21 @@ extension UIViewController {
         backButton.addTarget(self, action: Selector(action ?? ""), for: .touchUpInside)
         backButton.translatesAutoresizingMaskIntoConstraints = false
 
+        // Title
+       let label = UILabel()
+        label.text = title
+        label.font = .systemFont(ofSize: 20, weight: .heavy)
+        label.translatesAutoresizingMaskIntoConstraints = false
+
+        // Stack
+        let stack = UIStackView()
+        stack.axis = .horizontal
+        stack.spacing = 10
+        stack.addArrangedSubview(backButton)
+        stack.addArrangedSubview(label)
+        stack.transform = CGAffineTransform(translationX: 15, y: 10)
+        stack.translatesAutoresizingMaskIntoConstraints = false
+
         return customView
     }
 }
