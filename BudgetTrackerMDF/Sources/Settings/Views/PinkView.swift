@@ -77,7 +77,7 @@ class PinkView: UIView {
     }
 
     private func imageContentMode() {
-        setImageTo(view: imageView, in: .bottomRight, image: "ic-trophy")
+        setImageTo(view: imageView, in: .topRight, image: "ic-trophy")
     }
 
     private func setupHierarchy() {
@@ -86,7 +86,7 @@ class PinkView: UIView {
 
     private func setupLayout() {
         NSLayoutConstraint.activate([
-            stackView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            stackView.centerYAnchor.constraint(equalTo: centerYAnchor),
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 25),
 
             imageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -20),
