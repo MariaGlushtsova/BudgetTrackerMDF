@@ -19,6 +19,8 @@
 		D17C8F1C2A3DDA4000A11528 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17C8F1B2A3DDA4000A11528 /* Fonts.swift */; };
 		FAB2A40D2A8FB4BB001203B5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2A40C2A8FB4BB001203B5 /* SettingsViewController.swift */; };
 		FAB2A40F2A8FBCBE001203B5 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2A40E2A8FBCBE001203B5 /* SettingsModel.swift */; };
+		FAB2A4122A8FE9AE001203B5 /* PinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2A4112A8FE9AE001203B5 /* PinkView.swift */; };
+		FAB2A4152A8FEDC1001203B5 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2A4142A8FEDC1001203B5 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		D17C8F1B2A3DDA4000A11528 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		FAB2A40C2A8FB4BB001203B5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FAB2A40E2A8FBCBE001203B5 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		FAB2A4112A8FE9AE001203B5 /* PinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkView.swift; sourceTree = "<group>"; };
+		FAB2A4142A8FEDC1001203B5 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 		84EF51552A3B554500579639 /* BudgetTrackerMDF */ = {
 			isa = PBXGroup;
 			children = (
+				FAB2A4132A8FED9E001203B5 /* Extensions */,
 				D17C8F0E2A3DC6AC00A11528 /* App */,
 				D17C8F0F2A3DC6BB00A11528 /* Sources */,
 				D17C8F102A3DC6E700A11528 /* Resources */,
@@ -134,10 +139,27 @@
 		FAB2A40B2A8FB485001203B5 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				FAB2A4102A8FE900001203B5 /* Views */,
 				FAB2A40C2A8FB4BB001203B5 /* SettingsViewController.swift */,
 				FAB2A40E2A8FBCBE001203B5 /* SettingsModel.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		FAB2A4102A8FE900001203B5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAB2A4112A8FE9AE001203B5 /* PinkView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FAB2A4132A8FED9E001203B5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAB2A4142A8FEDC1001203B5 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +241,9 @@
 			files = (
 				FAB2A40F2A8FBCBE001203B5 /* SettingsModel.swift in Sources */,
 				84EF515B2A3B554500579639 /* ViewController.swift in Sources */,
+				FAB2A4152A8FEDC1001203B5 /* UIView+Extensions.swift in Sources */,
 				D17C8F182A3DCC2400A11528 /* Colors.swift in Sources */,
+				FAB2A4122A8FE9AE001203B5 /* PinkView.swift in Sources */,
 				FAB2A40D2A8FB4BB001203B5 /* SettingsViewController.swift in Sources */,
 				D17C8F1A2A3DD4AF00A11528 /* Images.swift in Sources */,
 				84EF51572A3B554500579639 /* AppDelegate.swift in Sources */,
