@@ -8,14 +8,15 @@
 import UIKit
 
 extension UIView {
-    func addSubviews(_ subviews: [UIView]) {
+    func addSubviews(subviews: [UIView]) {
         subviews.forEach { addSubview($0) }
     }
 }
 
 extension UIView {
     // Пример функции для добавления constraints для задания позиции и размеров
-    func addConstraints(top: NSLayoutYAxisAnchor? = nil,
+    func addConstraints(
+                        top: NSLayoutYAxisAnchor? = nil,
                         paddingTop: CGFloat = 0,
 
                         leading: NSLayoutXAxisAnchor? = nil,
@@ -31,8 +32,8 @@ extension UIView {
                         centerY: NSLayoutYAxisAnchor? = nil,
                         
                         width: CGFloat = 0,
-                        height: CGFloat = 0) {
-
+                        height: CGFloat = 0
+        ) {
         translatesAutoresizingMaskIntoConstraints = false
 
         if let top = top {

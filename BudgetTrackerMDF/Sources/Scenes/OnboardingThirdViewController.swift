@@ -24,10 +24,6 @@ class OnboardingThirdViewController: UIViewController {
         setupLayout()
     }
 
-    init() {
-        super.init(nibName: nil, bundle: nil)
-    }
-
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -45,7 +41,4 @@ class OnboardingThirdViewController: UIViewController {
                                       bottom: view.bottomAnchor
         )
     }
-
-    // MARK: - Actions
-
 }

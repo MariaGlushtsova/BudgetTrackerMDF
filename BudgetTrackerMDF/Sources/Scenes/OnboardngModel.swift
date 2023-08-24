@@ -8,10 +8,10 @@
 import Foundation
 
 struct OnboardingModel: Hashable {
-    var image: String
-    var pageImage: String
-    var title: String
-    var description: String
+    let image: String
+    let pageImage: String
+    let title: String
+    let description: String
 }
 
 extension OnboardingModel {
