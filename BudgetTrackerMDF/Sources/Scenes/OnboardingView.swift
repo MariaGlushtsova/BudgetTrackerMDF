@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class OnboardingView: UIView {
+final class OnboardingView: BasicView {
 
     private var currentModelIndex = 0
 
@@ -54,7 +54,7 @@ final class OnboardingView: UIView {
     // MARK: - Initialization
 
     init(model: OnboardingModel) {
-        super.init(frame: .zero)
+        super.init()
         backgroundColor = .white
         setupHierarchy()
         setupLayout()
@@ -81,12 +81,12 @@ final class OnboardingView: UIView {
         descriptionLabel.text = model.description
     }
 
-    private func setupHierarchy() {
+    override func setupHierarchy() {
         addSubviews(subviews: [mainImageView, pageImageView, childView])
         childView.addSubviews(subviews: [titleLabel, descriptionLabel, listPageButton])
     }
 
-    private func setupLayout() {
+    override func setupLayout() {
         mainImageView.addConstraints(
                                     bottom: pageImageView.topAnchor,
                                     paddingBottom: 93,
