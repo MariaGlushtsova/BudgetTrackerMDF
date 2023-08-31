@@ -22,6 +22,10 @@
 		FA2AEDCA2A5AB15B00991B27 /* GTWalsheimPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D17C8F132A3DC6E800A11528 /* GTWalsheimPro-Regular.ttf */; };
 		FA6CD1B02A5958F200B9E570 /* OnboardngModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CD1AF2A5958F200B9E570 /* OnboardngModel.swift */; };
 		FA6CD1B22A595B6700B9E570 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CD1B12A595B6700B9E570 /* OnboardingView.swift */; };
+		FAB2A3D92A850D3C001203B5 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2A3D82A850D3C001203B5 /* UIView+Extensions.swift */; };
+		FAB2A3DB2A8573E3001203B5 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2A3DA2A8573E3001203B5 /* Theme.swift */; };
+		FAB2A4262A9C8623001203B5 /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2A4252A9C8623001203B5 /* BasicViewController.swift */; };
+		FAB2A4282A9C8772001203B5 /* BasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2A4272A9C8772001203B5 /* BasicView.swift */; };
 		FAD747922A3DE52A00EDE392 /* OnboardingThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD747912A3DE52A00EDE392 /* OnboardingThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +46,10 @@
 		D17C8F1B2A3DDA4000A11528 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		FA6CD1AF2A5958F200B9E570 /* OnboardngModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardngModel.swift; sourceTree = "<group>"; };
 		FA6CD1B12A595B6700B9E570 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		FAB2A3D82A850D3C001203B5 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		FAB2A3DA2A8573E3001203B5 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		FAB2A4252A9C8623001203B5 /* BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
+		FAB2A4272A9C8772001203B5 /* BasicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicView.swift; sourceTree = "<group>"; };
 		FAD747912A3DE52A00EDE392 /* OnboardingThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,7 +84,9 @@
 		84EF51552A3B554500579639 /* BudgetTrackerMDF */ = {
 			isa = PBXGroup;
 			children = (
+				FAB2A4242A9C85F4001203B5 /* Custom Views */,
 				D17C8F0E2A3DC6AC00A11528 /* App */,
+				FAB2A3D72A850CFF001203B5 /* Extensions */,
 				D17C8F0F2A3DC6BB00A11528 /* Sources */,
 				D17C8F102A3DC6E700A11528 /* Resources */,
 			);
@@ -130,6 +140,7 @@
 				D17C8F172A3DCC2400A11528 /* Colors.swift */,
 				D17C8F192A3DD4AF00A11528 /* Images.swift */,
 				D17C8F1B2A3DDA4000A11528 /* Fonts.swift */,
+				FAB2A3DA2A8573E3001203B5 /* Theme.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -142,6 +153,23 @@
 				FA6CD1B12A595B6700B9E570 /* OnboardingView.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FAB2A3D72A850CFF001203B5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAB2A3D82A850D3C001203B5 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FAB2A4242A9C85F4001203B5 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAB2A4252A9C8623001203B5 /* BasicViewController.swift */,
+				FAB2A4272A9C8772001203B5 /* BasicView.swift */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,9 +252,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB2A4282A9C8772001203B5 /* BasicView.swift in Sources */,
 				84EF515B2A3B554500579639 /* ViewController.swift in Sources */,
+				FAB2A4262A9C8623001203B5 /* BasicViewController.swift in Sources */,
 				FAD747922A3DE52A00EDE392 /* OnboardingThirdViewController.swift in Sources */,
+				FAB2A3D92A850D3C001203B5 /* UIView+Extensions.swift in Sources */,
 				FA6CD1B02A5958F200B9E570 /* OnboardngModel.swift in Sources */,
+				FAB2A3DB2A8573E3001203B5 /* Theme.swift in Sources */,
 				FA6CD1B22A595B6700B9E570 /* OnboardingView.swift in Sources */,
 				D17C8F182A3DCC2400A11528 /* Colors.swift in Sources */,
 				D17C8F1A2A3DD4AF00A11528 /* Images.swift in Sources */,
