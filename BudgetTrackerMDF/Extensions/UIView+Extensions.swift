@@ -14,25 +14,25 @@ extension UIView {
 }
 
 extension UIView {
-    // Пример функции для добавления constraints для задания позиции и размеров
+    // Функция для добавления constraints для задания позиции и размеров
     func addConstraints(
-                        top: NSLayoutYAxisAnchor? = nil,
-                        paddingTop: CGFloat = 0,
+        top: NSLayoutYAxisAnchor? = nil,
+        paddingTop: CGFloat = 0,
 
-                        leading: NSLayoutXAxisAnchor? = nil,
-                        paddingLeft: CGFloat = 0,
+        leading: NSLayoutXAxisAnchor? = nil,
+        paddingLeft: CGFloat = 0,
 
-                        trailing: NSLayoutXAxisAnchor? = nil,
-                        paddingRight: CGFloat = 0,
+        trailing: NSLayoutXAxisAnchor? = nil,
+        paddingRight: CGFloat = 0,
 
-                        bottom: NSLayoutYAxisAnchor? = nil,
-                        paddingBottom: CGFloat = 0,
+        bottom: NSLayoutYAxisAnchor? = nil,
+        paddingBottom: CGFloat = 0,
 
-                        centerX: NSLayoutXAxisAnchor? = nil,
-                        centerY: NSLayoutYAxisAnchor? = nil,
+        centerX: NSLayoutXAxisAnchor? = nil,
+        centerY: NSLayoutYAxisAnchor? = nil,
                         
-                        width: CGFloat = 0,
-                        height: CGFloat = 0
+        width: CGFloat = 0,
+        height: CGFloat = 0
         ) {
         translatesAutoresizingMaskIntoConstraints = false
 

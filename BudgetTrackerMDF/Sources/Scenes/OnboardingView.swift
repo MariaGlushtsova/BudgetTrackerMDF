@@ -53,12 +53,9 @@ final class OnboardingView: BasicView {
 
     // MARK: - Initialization
 
-    init(model: OnboardingModel) {
+    init(model: OnboardingItemModel) {
         super.init()
-        backgroundColor = .white
-        setupHierarchy()
-        setupLayout()
-        setupView(model: model)
+        updateOnboarding(with: model)
     }
 
     required init?(coder: NSCoder) {
@@ -67,14 +64,7 @@ final class OnboardingView: BasicView {
 
     // MARK: - Setup
 
-    private func updateOnboarding(with model: OnboardingModel) {
-        mainImageView.image = UIImage(named: model.image)
-        pageImageView.image = UIImage(named: model.pageImage)
-        titleLabel.text = model.title
-        descriptionLabel.text = model.description
-    }
-
-    private func setupView(model: OnboardingModel) {
+    private func updateOnboarding(with model: OnboardingItemModel) {
         mainImageView.image = UIImage(named: model.image)
         pageImageView.image = UIImage(named: model.pageImage)
         titleLabel.text = model.title
@@ -88,49 +78,49 @@ final class OnboardingView: BasicView {
 
     override func setupLayout() {
         mainImageView.addConstraints(
-                                    bottom: pageImageView.topAnchor,
-                                    paddingBottom: 93,
-                                    centerX: centerXAnchor,
-                                    width: 232,
-                                    height: 251
+            bottom: pageImageView.topAnchor,
+            paddingBottom: 93,
+            centerX: centerXAnchor,
+            width: 232,
+            height: 251
         )
         pageImageView.addConstraints(
-                                    bottom: childView.topAnchor,
-                                    paddingBottom: 35,
-                                    centerX: centerXAnchor,
-                                    width: 30,
-                                    height: 4
+            bottom: childView.topAnchor,
+            paddingBottom: 35,
+            centerX: centerXAnchor,
+            width: 30,
+            height: 4
         )
         titleLabel.addConstraints(
-                                top: childView.topAnchor,
-                                paddingTop: 34,
-                                centerX: centerXAnchor
+            top: childView.topAnchor,
+            paddingTop: 34,
+            centerX: centerXAnchor
         )
         descriptionLabel.addConstraints(
-                                        top: titleLabel.bottomAnchor,
-                                        paddingTop: 18,
-                                        leading: childView.leadingAnchor,
-                                        paddingLeft: 29,
-                                        trailing: childView.trailingAnchor,
-                                        paddingRight: 29
+            top: titleLabel.bottomAnchor,
+            paddingTop: 18,
+            leading: childView.leadingAnchor,
+            paddingLeft: 29,
+            trailing: childView.trailingAnchor,
+            paddingRight: 29
         )
         listPageButton.addConstraints(
-                                    top: descriptionLabel.bottomAnchor,
-                                    paddingTop: 50,
-                                    leading: childView.leadingAnchor,
-                                    paddingLeft: 45,
-                                    trailing: childView.trailingAnchor,
-                                    paddingRight: 45,
-                                    height: 48
+            top: descriptionLabel.bottomAnchor,
+            paddingTop: 50,
+            leading: childView.leadingAnchor,
+            paddingLeft: 45,
+            trailing: childView.trailingAnchor,
+            paddingRight: 45,
+            height: 48
         )
         childView.addConstraints(
-                                leading: leadingAnchor,
-                                paddingLeft: 15,
-                                trailing: trailingAnchor,
-                                paddingRight: 15,
-                                bottom: bottomAnchor,
-                                paddingBottom: 31,
-                                height: 270
+            leading: leadingAnchor,
+            paddingLeft: 15,
+            trailing: trailingAnchor,
+            paddingRight: 15,
+            bottom: bottomAnchor,
+            paddingBottom: 31,
+            height: 270
         )
     }
 
@@ -139,8 +129,8 @@ final class OnboardingView: BasicView {
     @objc func listPageButtonPressed() {
         currentModelIndex += 1
 
-        if currentModelIndex < OnboardingModel.modelsArray.count {
-            let nextModel = OnboardingModel.modelsArray[currentModelIndex]
+        if currentModelIndex < OnboardingItemModel.modelsArray.count {
+            let nextModel = OnboardingItemModel.modelsArray[currentModelIndex]
             updateOnboarding(with: nextModel)
         } else {
             // Переход на следующий экран

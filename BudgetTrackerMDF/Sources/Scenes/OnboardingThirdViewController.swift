@@ -7,12 +7,12 @@
 
 import UIKit
 
-class OnboardingThirdViewController: BasicViewController {
+class OnboardingViewController: BasicViewController {
 
     // MARK: - Outlets
 
     private lazy var onboardingView: OnboardingView = {
-        let onboardingView = OnboardingView(model: OnboardingModel.modelsArray[0])
+        let onboardingView = OnboardingView(model: OnboardingItemModel.modelsArray[0])
         return onboardingView
     }()
 
@@ -20,13 +20,8 @@ class OnboardingThirdViewController: BasicViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupHierarchy()
-        setupLayout()
-    }
 
-//    required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
+    }
 
     // MARK: - Setup
 
@@ -36,10 +31,10 @@ class OnboardingThirdViewController: BasicViewController {
     
     override func setupLayout() {
         onboardingView.addConstraints(
-                                    top: view.topAnchor,
-                                    leading: view.leadingAnchor,
-                                    trailing: view.trailingAnchor,
-                                    bottom: view.bottomAnchor
+            top: view.topAnchor,
+            leading: view.leadingAnchor,
+            trailing: view.trailingAnchor,
+            bottom: view.bottomAnchor
         )
     }
 }
