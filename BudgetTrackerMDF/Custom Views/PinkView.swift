@@ -81,7 +81,7 @@ class PinkView: UIView {
     }
 
     private func setupHierarchy() {
-        addSubviews([stackView, imageView])
+        addSubviews(subviews: [stackView, imageView])
     }
 
     private func setupLayout() {

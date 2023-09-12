@@ -9,16 +9,11 @@ import UIKit
 
 class SwitchButtonTableViewCell: SimpleTableViewCell {
 
-//    override var settings: SettingsModel? {
-//
-//    }
-
     //MARK: - Outlets
 
     private lazy var switchControl: UISwitch = {
         let switchControl = UISwitch()
         switchControl.isOn = false
-        switchControl.translatesAutoresizingMaskIntoConstraints = false
         switchControl.addTarget(self, action: #selector(switchValueChanged), for: .valueChanged)
         return switchControl
     }()
@@ -48,10 +43,11 @@ class SwitchButtonTableViewCell: SimpleTableViewCell {
     }
 
     private func setupLayout() {
-        NSLayoutConstraint.activate([
-            switchControl.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -26),
-            switchControl.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
-        ])
+        switchControl.addConstraints(
+            trailing: contentView.trailingAnchor,
+            paddingRight: 26,
+            centerY: contentView.centerYAnchor
+        )
     }
 
     // MARK: - Actions

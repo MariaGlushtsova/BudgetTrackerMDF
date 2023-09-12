@@ -25,7 +25,6 @@ class SimpleTableViewCell: UITableViewCell {
         view.clipsToBounds = true
         view.layer.cornerRadius = 24
         view.contentMode = .scaleAspectFit
-        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
 
@@ -33,7 +32,6 @@ class SimpleTableViewCell: UITableViewCell {
         let imageView = UIImageView()
         imageView.tintColor = .white
         imageView.alpha = 0.5
-        imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
 
@@ -43,7 +41,6 @@ class SimpleTableViewCell: UITableViewCell {
         stack.alignment = .leading
         stack.distribution = .fill
         stack.spacing = 10
-        stack.translatesAutoresizingMaskIntoConstraints = false
         stack.addArrangedSubview(titleLabel)
         stack.addArrangedSubview(subtitleLabel)
         return stack
@@ -52,11 +49,9 @@ class SimpleTableViewCell: UITableViewCell {
     lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = Colors.mainDark.color
-        label.font = Fonts.bold.addFont(18)
+        Theme.labelStyle(label, font: .bold, size: 18)
         label.alpha = 0.8
         label.textAlignment = .left
-        label.numberOfLines = 5
         return label
     }()
 
@@ -66,7 +61,7 @@ class SimpleTableViewCell: UITableViewCell {
         label.textColor = .systemGray2
         label.font = Fonts.regular.addFont(12)
         label.textAlignment = .left
-        label.numberOfLines = 5
+        label.numberOfLines = 0
         return label
     }()
 
@@ -91,21 +86,25 @@ class SimpleTableViewCell: UITableViewCell {
     // MARK: - Setup
 
     private func setupHierarchy() {
-        contentView.addSubviews([conteinerView, iconImageView, stackView])
+        contentView.addSubviews(subviews: [conteinerView, iconImageView, stackView])
     }
 
     private func setupLayout() {
-        NSLayoutConstraint.activate([
-            conteinerView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 25),
-            conteinerView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            conteinerView.widthAnchor.constraint(equalToConstant: 48),
-            conteinerView.heightAnchor.constraint(equalToConstant: 48),
-
-            iconImageView.centerXAnchor.constraint(equalTo: conteinerView.centerXAnchor),
-            iconImageView.centerYAnchor.constraint(equalTo: conteinerView.centerYAnchor),
-
-            stackView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            stackView.leadingAnchor.constraint(equalTo: iconImageView.trailingAnchor, constant: 31)
-        ])
+        conteinerView.addConstraints(
+            leading: conteinerView.leadingAnchor,
+            paddingLeft: 25,
+            centerY: conteinerView.centerYAnchor,
+            width: 48,
+            height: 48
+        )
+        iconImageView.addConstraints(
+            centerX: conteinerView.centerXAnchor,
+            centerY: conteinerView.centerYAnchor
+        )
+        stackView.addConstraints(
+            leading: iconImageView.trailingAnchor,
+            paddingLeft: 31,
+            centerY: contentView.centerYAnchor
+        )
     }
 }

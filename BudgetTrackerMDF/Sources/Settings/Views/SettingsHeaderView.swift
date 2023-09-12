@@ -15,7 +15,6 @@ class SettingsHeaderView: UITableViewHeaderFooterView {
         let view = PinkView()
         view.backgroundColor = Colors.pink.color
         view.layer.cornerRadius = 20
-        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
 
@@ -38,11 +37,13 @@ class SettingsHeaderView: UITableViewHeaderFooterView {
     }
 
     private func setupLayout() {
-        NSLayoutConstraint.activate([
-            pinkView.topAnchor.constraint(equalTo: contentView.topAnchor),
-            pinkView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 25),
-            pinkView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -25),
-            pinkView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
-        ])
+        pinkView.addConstraints(
+            top: contentView.topAnchor,
+            leading: contentView.leadingAnchor,
+            paddingLeft: 25,
+            trailing: contentView.trailingAnchor,
+            paddingRight: 25,
+            bottom: contentView.bottomAnchor
+        )
     }
 }

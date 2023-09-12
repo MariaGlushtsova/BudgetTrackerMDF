@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: BasicViewController {
 
     // MARK: - Outlets
 
@@ -15,7 +15,6 @@ class SettingsViewController: UIViewController {
         let tableView = UITableView(frame: .zero)
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
 
@@ -26,8 +25,6 @@ class SettingsViewController: UIViewController {
         title = "Settings"
         navigationController?.navigationBar.prefersLargeTitles = true
         registerCells()
-        setupHierarchy()
-        setupLayout()
     }
 
     // MARK: - Setup
@@ -39,17 +36,17 @@ class SettingsViewController: UIViewController {
         settingsTableView.register(SettingsHeaderView.self, forHeaderFooterViewReuseIdentifier: "header")
     }
 
-    private func setupHierarchy() {
+    override func setupHierarchy() {
         view.addSubview(settingsTableView)
     }
 
-    private func setupLayout() {
-        NSLayoutConstraint.activate([
-            settingsTableView.topAnchor.constraint(equalTo: view.topAnchor),
-            settingsTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            settingsTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            settingsTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        ])
+    override func setupLayout() {
+        settingsTableView.addConstraints(
+            top: view.topAnchor,
+            leading: view.leadingAnchor,
+            trailing: view.trailingAnchor,
+            bottom: view.bottomAnchor
+        )
     }
 }
 

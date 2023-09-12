@@ -47,9 +47,10 @@ class LabelTableViewCell: SimpleTableViewCell {
     }
 
     private func setupLayout() {
-        NSLayoutConstraint.activate([
-            detailLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -26),
-            detailLabel.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor)
-        ])
+        detailLabel.addConstraints(
+            trailing: contentView.trailingAnchor,
+            paddingRight: 26,
+            centerY: titleLabel.centerYAnchor
+        )
     }
 }
