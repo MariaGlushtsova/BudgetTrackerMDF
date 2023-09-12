@@ -17,6 +17,9 @@
 		D17C8F182A3DCC2400A11528 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17C8F172A3DCC2400A11528 /* Colors.swift */; };
 		D17C8F1A2A3DD4AF00A11528 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17C8F192A3DD4AF00A11528 /* Images.swift */; };
 		D17C8F1C2A3DDA4000A11528 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17C8F1B2A3DDA4000A11528 /* Fonts.swift */; };
+		FAAD0C162AB0211A009A1513 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD0C152AB0211A009A1513 /* Theme.swift */; };
+		FAAD0C182AB021BD009A1513 /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD0C172AB021BD009A1513 /* BasicViewController.swift */; };
+		FAAD0C1A2AB0221A009A1513 /* BasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD0C192AB0221A009A1513 /* BasicView.swift */; };
 		FAB2A40D2A8FB4BB001203B5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2A40C2A8FB4BB001203B5 /* SettingsViewController.swift */; };
 		FAB2A40F2A8FBCBE001203B5 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2A40E2A8FBCBE001203B5 /* SettingsModel.swift */; };
 		FAB2A4122A8FE9AE001203B5 /* PinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2A4112A8FE9AE001203B5 /* PinkView.swift */; };
@@ -47,6 +50,9 @@
 		D17C8F172A3DCC2400A11528 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D17C8F192A3DD4AF00A11528 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		D17C8F1B2A3DDA4000A11528 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		FAAD0C152AB0211A009A1513 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		FAAD0C172AB021BD009A1513 /* BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
+		FAAD0C192AB0221A009A1513 /* BasicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicView.swift; sourceTree = "<group>"; };
 		FAB2A40C2A8FB4BB001203B5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FAB2A40E2A8FBCBE001203B5 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		FAB2A4112A8FE9AE001203B5 /* PinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkView.swift; sourceTree = "<group>"; };
@@ -145,6 +151,7 @@
 				D17C8F172A3DCC2400A11528 /* Colors.swift */,
 				D17C8F192A3DD4AF00A11528 /* Images.swift */,
 				D17C8F1B2A3DDA4000A11528 /* Fonts.swift */,
+				FAAD0C152AB0211A009A1513 /* Theme.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -190,6 +197,8 @@
 			isa = PBXGroup;
 			children = (
 				FAB2A4112A8FE9AE001203B5 /* PinkView.swift */,
+				FAAD0C172AB021BD009A1513 /* BasicViewController.swift */,
+				FAAD0C192AB0221A009A1513 /* BasicView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -280,6 +289,8 @@
 				FAB2A41E2A8FFF08001203B5 /* SettingsHeaderView.swift in Sources */,
 				FAB2A4152A8FEDC1001203B5 /* UIView+Extensions.swift in Sources */,
 				FAB2A41A2A8FFC56001203B5 /* SwitchButtonTableViewCell.swift in Sources */,
+				FAAD0C182AB021BD009A1513 /* BasicViewController.swift in Sources */,
+				FAAD0C1A2AB0221A009A1513 /* BasicView.swift in Sources */,
 				FAB2A4182A8FF66D001203B5 /* SimpleTableViewCell.swift in Sources */,
 				D17C8F182A3DCC2400A11528 /* Colors.swift in Sources */,
 				FAB2A4122A8FE9AE001203B5 /* PinkView.swift in Sources */,
@@ -287,6 +298,7 @@
 				D17C8F1A2A3DD4AF00A11528 /* Images.swift in Sources */,
 				84EF51572A3B554500579639 /* AppDelegate.swift in Sources */,
 				FAB2A41C2A8FFD61001203B5 /* LabelTableViewCell.swift in Sources */,
+				FAAD0C162AB0211A009A1513 /* Theme.swift in Sources */,
 				D17C8F1C2A3DDA4000A11528 /* Fonts.swift in Sources */,
 				84EF51592A3B554500579639 /* SceneDelegate.swift in Sources */,
 			);
