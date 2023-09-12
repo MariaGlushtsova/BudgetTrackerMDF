@@ -91,9 +91,9 @@ class SimpleTableViewCell: UITableViewCell {
 
     private func setupLayout() {
         conteinerView.addConstraints(
-            leading: conteinerView.leadingAnchor,
+            leading: contentView.leadingAnchor,
             paddingLeft: 25,
-            centerY: conteinerView.centerYAnchor,
+            centerY: contentView.centerYAnchor,
             width: 48,
             height: 48
         )
